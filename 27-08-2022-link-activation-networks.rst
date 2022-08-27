@@ -13,7 +13,7 @@ spatial or temporal property, for example burstiness or degree inhomogeneity,
 and comparing the connectivity to temporal networks generated through methods
 that don't include that property. In this post I'll go through my current
 go-to family of models, link-activation temporal networks, as well as how you
-can use them in `Reticula`_ network analysis library.
+can use them in the `Reticula`_ network analysis library.
 
 .. _Reticula: https://reticula.network/
 
@@ -65,7 +65,7 @@ inter-event time.
 
 The last line is, however, where the magic happens. In addition to the
 inter-event time distribution :py:`iet_dist`, the function
-:py:`random_link_activation_temporal_network()` needs a `*residual* event-time
+:py:`random_link_activation_temporal_network()` needs a `residual event-time
 distribution <https://en.wikipedia.org/wiki/Residual_time>`_, which is used to
 draw the time of the first events. The idea here is to generate a random network
 that is indistinguishable from an observation of a temporal network with the
@@ -114,3 +114,10 @@ something else, e.g. a random :math:`k`-regular network, a Barabási–Albert
 network, or a Random expected degree-sequence network with an arbitrary
 degree-sequence of your choice. This static base network can be any directed or
 undirected dyadic networks or hypergraph.
+
+You can see an example of this method being used in the paper `Directed
+percolation in random temporal network models with heterogeneities
+<https://journals.aps.org/pre/abstract/10.1103/PhysRevE.105.054313>`_, where the
+we compared the critial threshold of reachability between different temporal
+networks generated using different static models and temporal activation
+proceses.
