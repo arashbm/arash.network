@@ -1,8 +1,8 @@
 Arash Badie-Modiri's website
 ============================
 
-Hi, I’m Arash Badie-Modiri. I’m a Doctor of Science in Technology (DSc. Tech.)
-candidate at Aalto University. I study complex systems: systems composed of a
+Hi, I’m Arash Badie-Modiri. I’m a postdoctoral researcher at the Central
+European University, Vienna. I study complex systems: systems composed of a
 large number of components that interact with each other, such as neurons in a
 human brain, people in a social network or buses in a public transport network.
 These systems show complex behaviour that emerges only when many of these
