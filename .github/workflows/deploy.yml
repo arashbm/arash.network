@@ -27,10 +27,10 @@ jobs:
           node-version: '20'
 
       - name: Install Tailwind CSS
-        run: npm install -g @tailwindcss/cli@next
+        run: npm install tailwindcss @tailwindcss/cli
 
       - name: Build CSS
-        run: tailwindcss -i template.css -o output.css --minify
+        run: npx @tailwindcss/cli -i template.css -o output.css --minify
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
