@@ -27,7 +27,7 @@ jobs:
           node-version: '20'
 
       - name: Install Tailwind CSS
-        run: npm install tailwindcss @tailwindcss/cli
+        run: npm install tailwindcss @tailwindcss/cli @tailwindcss/typography
 
       - name: Build CSS
         run: npx @tailwindcss/cli -i template.css -o output.css --minify
