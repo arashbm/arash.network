@@ -30,7 +30,7 @@ jobs:
         run: mkdir out
 
       - name: Install Tailwind CSS
-        run: npm install tailwindcss @tailwindcss/cli @tailwindcss/typography
+        run: npm install
 
       - name: Build CSS
         run: npx @tailwindcss/cli -i template.css -o out/output.css --minify
