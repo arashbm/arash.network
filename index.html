@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arash Badie-Modiri - Complex Networks Researcher</title>
+  <link href="output.css" rel="stylesheet">
+</head>
+
+<body class="bg-muted-bg text-gray-800 leading-relaxed">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <h1 class="text-2xl font-semibold text-academic-blue">Arash Badie-Modiri</h1>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="text-lg text-academic-gray hover:text-academic-blue transition-colors">About</a>
+          <a href="#research" class="text-lg text-academic-gray hover:text-academic-blue transition-colors">Research</a>
+          <a href="#publications"
+            class="text-lg text-academic-gray hover:text-academic-blue transition-colors">Publications</a>
+          <a href="#teaching" class="text-lg text-academic-gray hover:text-academic-blue transition-colors">Industry</a>
+          <a href="#contact" class="text-lg text-academic-gray hover:text-academic-blue transition-colors">Contact</a>
+        </div>
+        <button class="md:hidden" id="mobile-menu-btn">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div class="hidden md:hidden mt-4 space-y-2" id="mobile-menu">
+        <a href="#about" class="block py-2 text-academic-gray hover:text-academic-blue transition-colors">About</a>
+        <a href="#research"
+          class="block py-2 text-academic-gray hover:text-academic-blue transition-colors">Research</a>
+        <a href="#publications"
+          class="block py-2 text-academic-gray hover:text-academic-blue transition-colors">Publications</a>
+        <a href="#teaching"
+          class="block py-2 text-academic-gray hover:text-academic-blue transition-colors">Industry</a>
+        <a href="#contact" class="block py-2 text-academic-gray hover:text-academic-blue transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-16 bg-gradient-to-br from-soft-blue to-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
+        <div class="flex-shrink-0">
+          <img src="avatar.jpg" alt="Profile Photo" class="w-60 h-60 rounded-full object-cover shadow-sm">
+        </div>
+        <div class="flex-1 text-center md:text-left">
+          <h1 class="text-5xl md:text-3xl font-black text-academic-blue mb-4">Arash
+            Badie-Modiri</h1>
+          <p class="text-xl text-academic-gray mb-6">Complex Networks Postdoctoral
+            Researcher</p>
+          <p class="text-lg text-academic-gray mb-8 max-w-2xl md:max-w-none">
+            Researching temporal networks, reachability properties, spreading
+            processes, and decentralised federated learning. Currently working on
+            distributed, explainable AI systems at the National Research Council,
+            Italy.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="#publications"
+              class="bg-academic-blue text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors">Publications</a>
+            <a href="#contact"
+              class="bg-academic-blue text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors">Get
+              in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-academic-blue mb-8 text-center">About Me</h2>
+      <div class="prose prose-xl mx-auto">
+        <p class="text-lg text-academic-gray mb-6">
+          I am a Complex Networks postdoctoral researcher currently at the National
+          Research Council, Italy. I successfully defended my doctor of science thesis at
+          Aalto University, Finland in December 2022 on reachability and spreading
+          processes on temporal networks.
+        </p>
+        <p class="text-lg text-academic-gray mb-6">
+          My work spans temporal networks, their reachability properties and associated
+          critical behaviour, as well as decentralised machine learning and computational
+          social science problems. I'm comfortable developing analytical understanding of
+          networks while designing and performing large-scale simulations of network
+          dynamics in high-performance computing environments.
+        </p>
+        <p class="text-lg text-academic-gray">
+          Currently, I'm participating in the "Social eXplainable Artificial Intelligence"
+          project, analyzing the effects of real-world temporal and structural
+          heterogeneities on the efficacy of distributed machine learning systems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-academic-blue mb-8 text-center">Research</h2>
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold text-academic-blue mb-4">Temporal Network
+            Reachability and Spreading</h3>
+          <p class="text-md text-academic-gray">
+            Developing efficient methods for estimating limited waiting-time
+            reachability on temporal networks. I showed that reachability phase
+            transitions in temporal networks are in the directed percolation
+            universality class and provided frameworks for analyzing reachability in
+            empirical networks.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold text-academic-blue mb-4">Decentralised
+            Federated Learning</h3>
+          <p class="text-md text-academic-gray">
+            Analyzing and optimizing decentralised federated machine learning models
+            through complex networks lens. Developed novel neural network
+            initialization approaches based on eigenvector centralities to
+            significantly improve efficacy.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold text-academic-blue mb-4">Computational Social
+            Science</h3>
+          <p class="text-md text-academic-gray">
+            Working on polarisation and misinformation in online social media,
+            experimental design in crowdsourcing, and large-scale text and
+            conversation flow analysis.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold text-academic-blue mb-4">Network Algorithm
+            Development</h3>
+          <p class="text-md text-academic-gray">
+            Created open-source software library "Reticula" with implementations of
+            static, temporal, and temporal hypergraph network algorithms. Available
+            in modern C++ with Python bindings for research community use.
+          </p>
+        </div>
+      </div>
+
+      <!-- Academic Timeline -->
+      <div class="bg-white p-8 rounded-lg shadow-sm">
+        <h3 class="text-3xl font-semibold text-academic-blue mb-6">Academic Timeline</h3>
+        <div class="space-y-6">
+          <div class="flex flex-col md:flex-row md:items-center">
+            <div class="md:w-48 text-academic-blue font-semibold mb-2 md:mb-0">2025
+              - Present</div>
+            <div class="flex-1">
+              <h4 class="font-semibold text-academic-gray">Postdoctoral
+                Researcher</h4>
+              <p class="text-gray-600">National Research Council, Italy</p>
+              <p class="text-sm text-gray-500 mt-1">Social eXplainable
+                Artificial Intelligence project</p>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row md:items-center">
+            <div class="md:w-48 text-academic-blue font-semibold mb-2 md:mb-0">2023
+              - 2025</div>
+            <div class="flex-1">
+              <h4 class="font-semibold text-academic-gray">Postdoctoral
+                Researcher</h4>
+              <p class="text-gray-600">Central European University, Austria
+              </p>
+              <p class="text-sm text-gray-500 mt-1">Distributed, explainable
+                machine-learning systems</p>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row md:items-center">
+            <div class="md:w-48 text-academic-blue font-semibold mb-2 md:mb-0">2018
+              - 2023</div>
+            <div class="flex-1">
+              <h4 class="font-semibold text-academic-gray">D.Sc. (Tech.)
+                Computer Science</h4>
+              <p class="text-gray-600">Aalto University, Finland</p>
+              <p class="text-sm text-gray-500 mt-1">Thesis: Reachability and
+                spreading processes on temporal networks</p>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row md:items-center">
+            <div class="md:w-48 text-academic-blue font-semibold mb-2 md:mb-0">2015
+              - 2018</div>
+            <div class="flex-1">
+              <h4 class="font-semibold text-academic-gray">M.Sc. Complex
+                Systems</h4>
+              <p class="text-gray-600">Aalto University, Finland</p>
+              <p class="text-sm text-gray-500 mt-1">Focus on temporal network
+                robustness and centrality measures</p>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row md:items-center">
+            <div class="md:w-48 text-academic-blue font-semibold mb-2 md:mb-0">2010
+              - 2015</div>
+            <div class="flex-1">
+              <h4 class="font-semibold text-academic-gray">B.Sc. Physics
+                (Condensed Matter)</h4>
+              <p class="text-gray-600">Shahid Beheshti University, Iran</p>
+              <p class="text-sm text-gray-500 mt-1">Network analysis of
+                biomedical scientific communities</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-academic-blue mb-8 text-center">Selected Publications</h2>
+      <div class="space-y-8">
+        <!-- Recent Publications (2024-2025) -->
+        <div class="mb-8">
+          <h3 class="text-lg font-semibold text-academic-blue mb-4">Recent Publications
+            (2024-2025)</h3>
+
+          <div class="border-l-4 border-green-600 pl-6 mb-6">
+            <h4 class="font-semibold text-academic-gray mb-2">Incivility and
+              Contentiousness Spillover in Public Engagement with Public
+              Health and Climate Science</h4>
+            <p class="text-sm text-gray-600 mb-1">Narimanzadeh, H.,
+              <strong>Badie-Modiri, A.</strong>, Smirnova, I., & Chen, T. H.
+              Y. (2025)
+            </p>
+            <p class="text-gray-500 text-sm mb-2"><em>arXiv preprint</em> • <a
+                href="https://doi.org/10.48550/arXiv.2502.05255" target="_blank">DOI:
+                10.48550/arXiv.2502.05255</a></p>
+          </div>
+
+          <div class="border-l-4 border-green-600 pl-6 mb-6">
+            <h4 class="font-semibold text-academic-gray mb-2">Initialisation and
+              Network Effects in Decentralised Federated Learning</h4>
+            <p class="text-sm text-gray-600 mb-1"><strong>Badie-Modiri, A.</strong>,
+              Boldrini, C., Valerio, L., Kertész, J., & Karsai, M. (2024)</p>
+            <p class="text-gray-500 text-sm mb-2"><em>arXiv preprint</em> • <a
+                href="https://doi.org/10.48550/arXiv.2403.15855" target="_blank">DOI:
+                10.48550/arXiv.2403.15855</a></p>
+          </div>
+        </div>
+
+        <!-- Journal Articles -->
+        <div class="mb-8">
+          <h3 class="text-lg font-semibold text-academic-blue mb-4">Journal Articles</h3>
+          <div class="border-l-4 border-academic-blue pl-6 mb-6">
+            <h4 class="font-semibold text-academic-gray mb-2">Crowdsourcing
+              subjective annotations using pairwise comparisons reduces bias
+              and error compared to the majority-vote method</h4>
+            <p class="text-sm text-gray-600 mb-1">Narimanzadeh, H.,
+              <strong>Badie-Modiri, A.</strong>, Smirnova, I. G., & Chen, T.
+              H. Y. (2023)
+            </p>
+            <p class="text-gray-500 text-sm mb-2"><em>Proceedings of the ACM on
+                Human-Computer Interaction</em>, 7(CSCW2), 1-29 • <a href="https://doi.org/10.1145/3610183"
+                target="_blank">DOI: 10.1145/3610183</a></p>
+          </div>
+
+          <div class="border-l-4 border-academic-blue pl-6 mb-6">
+            <h4 class="font-semibold text-academic-gray mb-2">Reticula: A temporal
+              network and hypergraph analysis software package</h4>
+            <p class="text-sm text-gray-600 mb-1"><strong>Badie-Modiri, A.</strong>
+              & Kivelä, M. (2023)</p>
+            <p class="text-gray-500 text-sm mb-2"><em>SoftwareX</em>, 21, 101301 •
+              <a href="https://doi.org/10.1016/j.softx.2022.101301" target="_blank">DOI:
+                10.1016/j.softx.2022.101301</a>
+            </p>
+          </div>
+
+          <div class="border-l-4 border-academic-blue pl-6 mb-6">
+            <h4 class="font-semibold text-academic-gray mb-2">Directed percolation
+              in temporal networks</h4>
+            <p class="text-sm text-gray-600 mb-1"><strong>Badie-Modiri, A.</strong>,
+              Rizi, A. K., Karsai, M., & Kivelä, M. (2022)</p>
+            <p class="text-gray-500 text-sm mb-2"><em>Physical Review Research</em>,
+              4(2), L022047 • <a href="https://doi.org/10.1103/PhysRevResearch.4.L022047" target="_blank">DOI:
+                10.1103/PhysRevResearch.4.L022047</a></p>
+          </div>
+
+          <div class="border-l-4 border-academic-blue pl-6 mb-6">
+            <h4 class="font-semibold text-academic-gray mb-2">Directed percolation
+              in random temporal network models with heterogeneities</h4>
+            <p class="text-sm text-gray-600 mb-1"><strong>Badie-Modiri, A.</strong>,
+              Rizi, A. K., Karsai, M., & Kivelä, M. (2022)</p>
+            <p class="text-gray-500 text-sm mb-2"><em>Physical Review E</em>,
+              105(5), 054313 • <a href="https://doi.org/10.1103/PhysRevE.105.054313" target="_blank">DOI:
+                10.1103/PhysRevE.105.054313</a></p>
+          </div>
+
+          <div class="border-l-4 border-academic-blue pl-6 mb-6">
+            <h4 class="font-semibold text-academic-gray mb-2">Epidemic spreading and
+              digital contact tracing: Effects of heterogeneous mixing and
+              quarantine failures</h4>
+            <p class="text-sm text-gray-600 mb-1">Rizi, A. K., Faqeeh, A.,
+              <strong>Badie-Modiri, A.</strong>, & Kivelä, M. (2022)
+            </p>
+            <p class="text-gray-500 text-sm mb-2"><em>Physical Review E</em>,
+              105(4), 044313 • <a href="https://doi.org/10.1103/PhysRevE.105.044313" target="_blank">DOI:
+                10.1103/PhysRevE.105.044313</a></p>
+          </div>
+
+          <div class="border-l-4 border-academic-blue pl-6 mb-6">
+            <h4 class="font-semibold text-academic-gray mb-2">Efficient limited-time
+              reachability estimation in temporal networks</h4>
+            <p class="text-sm text-gray-600 mb-1"><strong>Badie-Modiri, A.</strong>,
+              Karsai, M., & Kivelä, M. (2020)</p>
+            <p class="text-gray-500 text-sm mb-2"><em>Physical Review E</em>,
+              101(5), 052303 • <a href="https://doi.org/10.1103/PhysRevE.101.052303" target="_blank">DOI:
+                10.1103/PhysRevE.101.052303</a></p>
+          </div>
+
+          <div class="border-l-4 border-academic-blue pl-6 mb-6">
+            <h4 class="font-semibold text-academic-gray mb-2">Evolution of
+              communities in the medical sciences: evidence from the medical
+              words network</h4>
+            <p class="text-sm text-gray-600 mb-1">Shirazi, A. H.,
+              <strong>Badie-Modiri, A.</strong>, Heydari, S., Rohn, J. L.,
+              Jafari, G. R., & Mani, A. R. (2016)
+            </p>
+            <p class="text-gray-500 text-sm mb-2"><em>PLOS One</em>, 11(12),
+              e0167546 • <a href="https://doi.org/10.1371/journal.pone.0167546" target="_blank">DOI:
+                10.1371/journal.pone.0167546</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Book Chapters -->
+        <div class="mb-8">
+          <h3 class="text-lg font-semibold text-academic-blue mb-4">Book Chapters</h3>
+
+          <div class="border-l-4 border-purple-600 pl-6 mb-6">
+            <h4 class="font-semibold text-academic-gray mb-2">Weighted Temporal
+              Event Graphs and Temporal-Network Connectivity</h4>
+            <p class="text-sm text-gray-600 mb-1">Saramäki, J.,
+              <strong>Badie-Modiri, A.</strong>, Rizi, A. K., Kivelä, M., &
+              Karsai, M. (2023)
+            </p>
+            <p class="text-gray-500 text-sm mb-2">In <em>Temporal Network
+                Theory</em> (pp. 107-130). Springer • <a href="https://doi.org/10.1007/978-3-031-30399-9_6"
+                target="_blank">DOI:
+                10.1007/978-3-031-30399-9_6</a></p>
+          </div>
+        </div>
+
+        <!-- Theses -->
+        <div class="mb-8">
+          <h3 class="text-lg font-semibold text-academic-blue mb-4">Theses</h3>
+
+          <div class="border-l-4 border-orange-600 pl-6 mb-6">
+            <h4 class="font-semibold text-academic-gray mb-2">Reachability and
+              Spreading Processes on Temporal Networks</h4>
+            <p class="text-sm text-gray-600 mb-1"><strong>Badie-Modiri, A.</strong>
+              (2022)</p>
+            <p class="text-gray-500 text-sm mb-2">Doctoral thesis, Aalto University
+              • ISBN: 978-952-64-1051-7 • <a href="http://urn.fi/URN:ISBN:978-952-64-1051-7"
+                target="_blank">URN:ISBN:978-952-64-1051-7</a></p>
+          </div>
+
+          <div class="border-l-4 border-orange-600 pl-6 mb-6">
+            <h4 class="font-semibold text-academic-gray mb-2">Error and Attack
+              Tolerance of Public Transportation Networks: A Temporal Networks
+              Approach</h4>
+            <p class="text-sm text-gray-600 mb-1"><strong>Badie-Modiri, A.</strong>
+              (2018)</p>
+            <p class="text-gray-500 text-sm mb-2">Master's thesis, Aalto University
+              • <a href="http://urn.fi/URN:NBN:fi:aalto-201806293772" target="_blank">URN:NBN:fi:aalto-201806293772</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <a href="https://scholar.google.com/citations?user=xumH4v8AAAAJ&hl=en"
+          class="text-academic-blue hover:underline" target="_blank">View All Publications
+          on Google Scholar →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-academic-blue mb-8 text-center">Contact</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold text-academic-blue mb-4">Current Affiliations
+          </h3>
+          <div class="space-y-2 text-academic-gray">
+            <p>National Research Council, Italy</p>
+            <p>Aalto University, Finland</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-academic-blue mb-4">Connect</h3>
+          <div class="space-y-2">
+            <a href="mailto:academic@arash.network" class="block text-academic-blue hover:underline">
+              academic@arash.network
+            </a>
+            <a href="https://scholar.google.com/citations?user=xumH4v8AAAAJ&hl=en"
+              class="block text-academic-blue hover:underline" target="_blank">
+              Google Scholar Profile
+            </a>
+            <a href="https://github.com/arashbm" class="block text-academic-blue hover:underline" target="_blank">
+              GitHub Profile
+            </a>
+            <a href="https://reticula.network/" class="block text-academic-blue hover:underline" target="_blank">
+              Reticula Library
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-academic-blue text-white py-8">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <p>&copy; 2024 Arash Badie-Modiri. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile menu toggle script -->
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>

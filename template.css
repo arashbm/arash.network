@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Black.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Bold.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-SemiBold.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  --font-sans: Poppins, sans-serif;
+  --color-academic-blue: #334155;
+  --color-academic-gray: #475569;
+  --color-muted-bg: #f8fafc;
+  --color-soft-blue: #e2e8f0;
+}
+
+@layer base {
+  html {
+    font-size: 17px;
+  }
+  p a {
+    @apply text-blue-600 hover:underline;
+  }
+}
