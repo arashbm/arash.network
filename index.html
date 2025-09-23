@@ -44,7 +44,8 @@
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
         <div class="flex-shrink-0">
-          <img src="avatar.jpg" alt="Profile Photo" class="w-60 h-60 rounded-full object-cover shadow-sm">
+          <img src="avatar.jpg" alt="Profile Photo"
+            class="w-60 h-60 rounded-full mask mask-decagon object-cover shadow-sm">
         </div>
         <div class="flex-1 text-center md:text-left">
           <h1 class="text-4xl md:text-2xl font-black text-academic-blue mb-2">Arash
@@ -143,28 +144,11 @@
       </div>
 
       <!-- Academic Timeline -->
-      <div class="bg-gray-100 p-8 rounded-lg shadow-sm  max-w-4xl mx-auto">
+      <div class="bg-gray-100 p-8 rounded-lg shadow-sm  max-w-3xl mx-auto">
         <h3 class="text-3xl font-semibold text-academic-blue mb-6 text-center">Academic Timeline</h3>
         <ul class="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
           <li>
-            <div class="timeline-start mr-4">2025–Present</div>
-            <div class="timeline-middle">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                <path fill-rule="evenodd"
-                  d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-                  clip-rule="evenodd" />
-              </svg>
-            </div>
-            <div class="timeline-end mb-7 ml-4">
-              <h4 class="font-semibold text-academic-gray">Postdoctoral Researcher</h4>
-              <p class="text-gray-600">National Research Council, Italy</p>
-              <p class="text-sm text-gray-500 mt-1">Social eXplainable Artificial Intelligence project</p>
-            </div>
-            <hr class="bg-academic-gray" />
-          </li>
-          <li>
             <hr class="bg-academic-blue" />
-            <div class="timeline-start mr-4">2023–2025</div>
             <div class="timeline-middle">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
                 <path fill-rule="evenodd"
@@ -173,33 +157,43 @@
               </svg>
             </div>
             <div class="timeline-end mb-7 ml-4">
+              <p>2023–Present</p>
               <h4 class="font-semibold text-academic-gray">Postdoctoral Researcher</h4>
               <p class="text-gray-600">Central European University, Austria</p>
-              <p class="text-sm text-gray-500 mt-1">Distributed, explainable machine-learning systems</p>
+              <p class="text-gray-600">National Research Council, Italy</p>
+              <p class="text-sm text-gray-600 mt-3">Working on the Social eXplainable Artificial Intelligence project,
+                analyzing how real-world temporal and structural heterogeneities affect distributed machine learning
+                systems. Developed novel neural network initialization methods based on eigenvector centralities that
+                significantly improve decentralized federated learning performance, demonstrating the connection between
+                network structure and learning dynamics.</p>
             </div>
             <hr class="bg-academic-gray" />
           </li>
           <li>
             <hr class="bg-academic-gray" />
-            <div class="timeline-start mr-4">2018–2023</div>
-            <div class="timeline-middle">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                <path fill-rule="evenodd"
-                  d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-                  clip-rule="evenodd" />
-              </svg>
-            </div>
-            <div class="timeline-end mb-7 ml-4">
+            <div class="timeline-start mb-7 mr-4 text-right">
+              <p>2018–2023</p>
               <h4 class="font-semibold text-academic-gray">D.Sc. (Tech.) Computer Science</h4>
               <p class="text-gray-600">Aalto University, Finland</p>
               <p class="text-sm text-gray-500 mt-1">Thesis: Reachability and spreading processes on temporal networks
               </p>
+              <p class="text-sm text-gray-600 mt-3">Developed efficient algorithms for estimating limited waiting-time
+                reachability on temporal networks and showed that reachability phase transitions belong to the directed
+                percolation universality class. Created the open-source Reticula software library for temporal network
+                analysis and established theoretical frameworks for understanding critical phenomena in time-varying
+                networks.</p>
+            </div>
+            <div class="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+                  clip-rule="evenodd" />
+              </svg>
             </div>
             <hr class="bg-academic-gray" />
           </li>
           <li>
             <hr class="bg-academic-gray" />
-            <div class="timeline-start mr-4">2015–2018</div>
             <div class="timeline-middle">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
                 <path fill-rule="evenodd"
@@ -208,15 +202,31 @@
               </svg>
             </div>
             <div class="timeline-end mb-7 ml-4">
+              <p>2015–2018</p>
               <h4 class="font-semibold text-academic-gray">M.Sc. Complex Systems</h4>
               <p class="text-gray-600">Aalto University, Finland</p>
-              <p class="text-sm text-gray-500 mt-1">Focus on temporal network robustness and centrality measures</p>
+              <p class="text-sm text-gray-500 mt-1">Thesis: Error and attack tolerance of public transportation
+                networks: A temporal networks approach
+              </p>
+              <p class="text-sm text-gray-600 mt-3">Studied robustness to random failures and targeted attacks and
+                centrality measures in temporal networks, particularly focusing on public transportation systems.
+                Developed temporal betweenness centrality measures that better identify critical network components
+                compared to static approaches, analyzing 20 cities' transportation networks and demonstrating the
+                importance of temporal perspectives in network vulnerability assessment.</p>
             </div>
             <hr class="bg-academic-gray" />
           </li>
           <li>
             <hr class="bg-academic-gray" />
-            <div class="timeline-start mr-4">2010–2015</div>
+            <div class="timeline-start mb-7 mr-4 text-right">
+              <p>2010–2015</p>
+              <h4 class="font-semibold text-academic-gray">B.Sc. Physics (Condensed Matter)</h4>
+              <p class="text-gray-600">Shahid Beheshti University, Iran</p>
+              <p class="text-sm text-gray-600 mt-3">Conducted research on the evolution of scientific communities in
+                biomedical sciences by analyzing over 9 million abstracts from PubMed. Performed community detection in
+                keyword co-occurrence networks across 5-year windows from 1980 to 2015, revealing patterns in the
+                formation and evolution of research communities in medical fields.</p>
+            </div>
             <div class="timeline-middle">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
                 <path fill-rule="evenodd"
@@ -224,11 +234,7 @@
                   clip-rule="evenodd" />
               </svg>
             </div>
-            <div class="timeline-end mb-7 ml-4">
-              <h4 class="font-semibold text-academic-gray">B.Sc. Physics (Condensed Matter)</h4>
-              <p class="text-gray-600">Shahid Beheshti University, Iran</p>
-              <p class="text-sm text-gray-500 mt-1">Network analysis of biomedical scientific communities</p>
-            </div>
+            <hr class="bg-academic-gray" />
           </li>
         </ul>
       </div>
