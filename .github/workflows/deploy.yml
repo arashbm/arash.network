@@ -26,11 +26,17 @@ jobs:
         with:
           node-version: '20'
 
+      - name: create output directory
+        run: mkdir out
+
       - name: Install Tailwind CSS
         run: npm install tailwindcss @tailwindcss/cli @tailwindcss/typography
 
       - name: Build CSS
-        run: npx @tailwindcss/cli -i template.css -o output.css --minify
+        run: npx @tailwindcss/cli -i template.css -o out/output.css --minify
+
+      - name: copy assets to output
+        run: cp -r index.html avatar.jpg fonts out/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -38,7 +44,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: 'out'
 
   deploy:
     needs: build
