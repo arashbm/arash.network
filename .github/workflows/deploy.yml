@@ -35,8 +35,8 @@ jobs:
       - name: Build CSS
         run: npx @tailwindcss/cli -i template.css -o out/output.css --minify
 
-      - name: copy assets to output
-        run: cp -r index.html avatar.jpg fonts out/
+      - name: Copy homepage and static files to output
+        run: cp -r index.html static out/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
